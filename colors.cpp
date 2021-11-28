@@ -42,7 +42,7 @@ Image::Image(QWidget *parent)
     mGreenImage = QPixmap("C:\\Users\\Poizone\\CLionProjects\\untitled7\\stars\\green_star.png");
     mYellowImage = QPixmap("C:\\Users\\Poizone\\CLionProjects\\untitled7\\stars\\yellow_star.png");
     mBlueImage = QPixmap("C:\\Users\\Poizone\\CLionProjects\\untitled7\\stars\\blue_star.png");
-    mCurrentImage = mBlueImage;
+    mCurrentImage = mRedImage;
     setGeometry(mCurrentImage.rect());
 }
 
@@ -80,18 +80,22 @@ void Image::changeColor(int newValue)
 {
     if(newValue <= 25)
     {
+        std::cout << "Red " << newValue << std::endl;
         setRed();
     }
     else if (newValue > 25 && newValue <= 50)
     {
+        std::cout << "Green " << newValue << std::endl;
         setGreen();
     }
     else if (newValue > 50 && newValue <= 75)
     {
+        std::cout << "Yellow " << newValue << std::endl;
         setYellow();
     }
     else if (newValue > 75)
     {
+        std::cout << "Blue " << newValue << std::endl;
         setBlue();
     }
 }
@@ -99,22 +103,23 @@ void Image::changeColor(int newValue)
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
-
+    QWidget *window = new QWidget();
     Image star(nullptr);
 
     auto *slider = new QSlider(Qt::Horizontal);
     slider->setMinimum(0);
     slider->setMaximum(100);
 
-    auto *layout = new QGridLayout(&star);
+    auto *layout = new QGridLayout(window);
+    layout->addWidget(&star);
     layout->addWidget(slider);
 
-    star.setFixedSize(200,200);
-    star.move(1000, 600);
+    window->setFixedSize(200,200);
+    window->move(1000, 600);
 
     QObject::connect(slider, &QSlider::valueChanged, &star, &Image::changeColor);
 
-    star.show();
+    window->show();
 
     return app.exec();
 }
