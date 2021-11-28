@@ -23,6 +23,7 @@ public:
     Image() = default;
     Image(QWidget *parent);
     void paintEvent(QPaintEvent *e) override;
+    QSize sizeHint() const override;
 public slots:
     void setRed();
     void setGreen();
@@ -34,22 +35,23 @@ public slots:
 Image::Image(QWidget *parent)
 {
     setParent(parent);
-
-    setToolTip("Stop");
-    QSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-
     mRedImage = QPixmap("C:\\Users\\Poizone\\CLionProjects\\untitled7\\stars\\red_star.png");
     mGreenImage = QPixmap("C:\\Users\\Poizone\\CLionProjects\\untitled7\\stars\\green_star.png");
     mYellowImage = QPixmap("C:\\Users\\Poizone\\CLionProjects\\untitled7\\stars\\yellow_star.png");
     mBlueImage = QPixmap("C:\\Users\\Poizone\\CLionProjects\\untitled7\\stars\\blue_star.png");
     mCurrentImage = mRedImage;
-    setGeometry(mCurrentImage.rect());
+
 }
 
 void Image::paintEvent(QPaintEvent *e)
 {
     QPainter p(this);
     p.drawPixmap(e->rect(), mCurrentImage);
+}
+
+QSize Image::sizeHint() const
+{
+    return QSize(100, 100);
 }
 
 void Image::setRed()
