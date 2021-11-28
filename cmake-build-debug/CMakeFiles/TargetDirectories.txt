@@ -1,0 +1,10 @@
+C:/Users/Poizone/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Poizone/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/untitled7.dir
+C:/Users/Poizone/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/responsive_ui.dir
+C:/Users/Poizone/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/push_button.dir
+C:/Users/Poizone/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/colors.dir
+C:/Users/Poizone/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Poizone/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/untitled7_autogen.dir
+C:/Users/Poizone/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/responsive_ui_autogen.dir
+C:/Users/Poizone/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/push_button_autogen.dir
+C:/Users/Poizone/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/colors_autogen.dir

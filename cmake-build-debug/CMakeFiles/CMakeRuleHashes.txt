@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+b09c02dce18bd628d6e82f939dde3154 CMakeFiles/colors_autogen
+33efe64ed0adf41c80fd8ee2ff09af71 CMakeFiles/push_button_autogen
+b05f9b304bcec1dbaf53ce93fc06cf42 CMakeFiles/responsive_ui_autogen
+0a63eef3360e654b6d859d447525d395 CMakeFiles/untitled7_autogen

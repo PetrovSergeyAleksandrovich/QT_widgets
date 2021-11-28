@@ -1,0 +1,1 @@
+-IC:/Users/Poizone/CLionProjects/untitled7/cmake-build-debug/colors_autogen/include -isystem D:/Qt/5.15.2/mingw81_64/include -isystem D:/Qt/5.15.2/mingw81_64/include/QtCore -isystem D:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++ -isystem D:/Qt/5.15.2/mingw81_64/include/QtGui -isystem D:/Qt/5.15.2/mingw81_64/include/QtANGLE -isystem D:/Qt/5.15.2/mingw81_64/include/QtWidgets
